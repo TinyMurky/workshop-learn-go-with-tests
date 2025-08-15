@@ -8,8 +8,8 @@ import (
 	"github.com/Tech-Book-Community/workshop-learn-go-with-tests/13-math-acceptance-test/murky/internal/testhelpers"
 )
 
-func TestHandInRadias(t *testing.T) {
-	t.Run("60 second per round", func(t *testing.T) {
+func TestHandInRadius(t *testing.T) {
+	t.Run("each run should have 60 second", func(t *testing.T) {
 
 		testCases := []struct {
 			now    time.Time
@@ -49,7 +49,7 @@ func TestHandInRadias(t *testing.T) {
 
 	})
 
-	t.Run("60 minute per round", func(t *testing.T) {
+	t.Run("each run should have 60 minute", func(t *testing.T) {
 
 		testCases := []struct {
 			now    time.Time
@@ -89,7 +89,7 @@ func TestHandInRadias(t *testing.T) {
 
 	})
 
-	t.Run("12 hours per round", func(t *testing.T) {
+	t.Run("each run should have 12 hours", func(t *testing.T) {
 
 		testCases := []struct {
 			now    time.Time
