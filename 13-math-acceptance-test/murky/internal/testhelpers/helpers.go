@@ -14,7 +14,7 @@ import (
 func SetTime(t testing.TB, hour, minute, second int) time.Time {
 	t.Helper()
 
-	timezone, _ := time.LoadLocation(config.DefaultTimezone)
+	timezone, _ := time.LoadLocation(config.TimezoneUTC8)
 	return time.Date(1970, time.January, 1, hour, minute, second, 0, timezone)
 }
 
